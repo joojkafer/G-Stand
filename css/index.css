@@ -1,0 +1,17 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(248, 255, 182);
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+.hrefpadrao{
+    color: black;
+    text-decoration: none;
+}
