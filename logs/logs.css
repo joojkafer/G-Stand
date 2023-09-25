@@ -1,0 +1,46 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body{
+    background-image: url('../img/bgimg.jpg'); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+.login{
+    border-radius: 10%;
+	background-color: rgb(248, 247, 247);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+
+.h1title{
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+.hrefpadrao{
+    color: black;
+    text-decoration: none;
+}
+
+.btnpad{
+    padding-top: 4%;
+}
+
+.aligntxt{
+    text-align: center;
+    margin-top: 2%;
+}
