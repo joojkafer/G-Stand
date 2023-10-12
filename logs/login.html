@@ -10,14 +10,20 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="logs.css" />
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" type="text/css" href="logs.css" />
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js "></script>
+    <script src="logs.js"></script>
+
   </head>
 
   <body>
@@ -41,26 +47,30 @@
                 type="email"
                 class="form-control"
                 id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
+                aria-describedby="emailHelp" />
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Senha</label
-              >
+              <label for="exampleInputPassword1" class="form-label">Senha</label>
               <input
                 type="password"
                 class="form-control"
-                id="exampleInputPassword1"
-              />
+                id="exampleInputPassword1" />
+            </div>
+            <div id="emailHelp" class="form-text">
+              <a href="#" class="hrefpadrao"> Esqueceu a senha? </a>
             </div>
             <div class="d-grid gap-2 btnpad">
-              <button class="btn btn-primary" type="button">Entrar</button>
+              <button class="btn btn-primary" type="button"
+                onclick="sweetError();">Entrar</button>
             </div>
-          </form>
+            <div>
+              <h5 class="aligntxt"> Não possuí conta?
+                <a href="register.html" class="hrefpadrao">Criar conta</a>
+              </h5>
+            </form>
+          </div>
+          <div class="col-md-4"></div>
         </div>
-        <div class="col-md-4"></div>
       </div>
-    </div>
-  </body>
-</html>
+    </body>
+  </html>
