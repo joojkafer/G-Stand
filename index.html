@@ -72,9 +72,17 @@
 
         <div class="row col-md-12">
             <div class="d-flex col-md-12 justify-content-center" style="padding-top: 10%;">
-                <button type="button" class="btn d-flex justify-content-center mx-auto" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    <img src="img/mapa.png" style="border-radius: 2%;">
+                <button type="button" class="btn d-flex justify-content-center mx-auto" >
+
+                    <img src="img/mapa.png" usemap="#workmap" style="border-radius: 1%;">
+
+                    <map name="workmap">
+                        <area shape="rect" coords="28,76,55,96" alt="" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" id="12">
+                        <area shape="rect" coords="290,172,333,250" alt="" href="phone.htm">
+                        <area shape="circle" coords="337,300,44" alt="" href="coffee.htm">
+                    </map>
+
                 </button>
             </div>
         </div>
