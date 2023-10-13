@@ -71,8 +71,32 @@ function sweetCancel(){
         reverseButtons: true
       }).then((result) => {
         if (result.isConfirmed) {
-          didClose();
+
         }
       })
+}
+
+function sweetGerarRelatorio(){
+  const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: 'btn btn-success',
+        cancelButton: 'btn btn-danger'
+      },
+      buttonsStyling: false
+    })
+    
+    swalWithBootstrapButtons.fire({
+      title: 'Gerar Relatório',
+      text: "Deseja gerar relatório com essas preferências?",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Sim',
+      cancelButtonText: 'Não',
+      reverseButtons: true
+    }).then((result) => {
+      if (result.isConfirmed) {
+
+      }
+    })
 }
 
