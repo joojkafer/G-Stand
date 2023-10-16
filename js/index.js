@@ -4,6 +4,10 @@ function sweetSuccess(){
         icon: 'success',
         title: 'Alterações salvas com sucesso!',
       })
+      var closeModalButton = document.querySelector('[data-bs-dismiss="modal"]');
+        if (closeModalButton) {
+          closeModalButton.click();
+        }
 }
 
 function sweetLoginSuccess(){
@@ -71,7 +75,10 @@ function sweetCancel(){
         reverseButtons: true
       }).then((result) => {
         if (result.isConfirmed) {
-
+          var closeModalButton = document.querySelector('[data-bs-dismiss="modal"]');
+          if (closeModalButton) {
+            closeModalButton.click();
+          }
         }
       })
 }
