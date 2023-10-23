@@ -137,7 +137,7 @@
                                 <td>
                                     <a href="#editEmployeeModal" 
                                         class="edit" data-bs-toggle="modal"
-                                        data-bs-target="#addEmployeeModal">
+                                        data-bs-target="#editEmployeeModal">
                                         <i class="material-icons"
                                             data-toggle="tooltip" title="Editar">&#xE254;</i>
                                     </a>
@@ -146,12 +146,6 @@
                                         data-bs-target="#deleteEmployeeModal">
                                         <i class="material-icons"
                                             data-toggle="tooltip" title="Limpar">&#xE872;</i>
-                                    </a>
-                                    <a href="#viluazeEmployeeModal"
-                                        class="visualize" data-bs-toggle="modal"
-                                        data-bs-target="#deleteEmployeeModal">
-                                        <i class="material-icons"
-                                            data-toggle="tooltip" title="Visualizar">remove_red_eye</i>   
                                     </a>
                                 </td>
                             </tr>
@@ -253,92 +247,179 @@
                     </div>
                 </div>
             </div>
-            <!-- Edit Modal HTML -->
-            <div id="addEmployeeModal" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header">
-                                <h4 class="modal-title">Adicionar produto</h4>
-                                <button type="button" class="close"
-                                    data-dismiss="modal" aria-hidden="true">&times;</button>
+
+            <div class="modal fade" id="editEmployeeModal" tabindex="-1" aria-hidden="true"
+                style="top: 11%;">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            <b>Formulário do Stand</b> </h1>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row col-md-12 justify-content-center">
+                            <div class="col-md-4">
+                                <label class="form-label"> <b>N. do Stand</b>
+                                </label>
+                                <input type="text" class="form-control">
+
+                                <label class="form-label"> <b>Expositor</b>
+                                </label>
+                                <input type="text" class="form-control">
+
+                                <label class="form-label"><b>Montagem</b>
+                                </label>
+                                <select class="form-select">
+                                    <option selected>Selecionar montagem</option>
+                                    <option value="1">Montagem básica</option>
+                                    <option value="2">Montagem especial</option>
+                                </select>
+
+                                <label class="form-label"> <b>Metragem</b>
+                                </label>
+                                <input type="text" class="form-control">
+
+                                <label class="form-label"> <b>Observação</b>
+                                </label>
+                                <input type="text" class="form-control"
+                                    style="height: 100px;">
                             </div>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <label>Cod. Produto</label>
-                                    <input type="text" class="form-control"
-                                        required>
+                            <div class="col-md-4">
+                                <label class="form-label"> <b>Valor do Piso
+                                        (R$)</b> </label>
+                                <input type="text" class="form-control">
+
+                                <label class="form-label"> <b>Valor de
+                                        Montagem (R$)</b> </label>
+                                <input type="text" class="form-control">
+
+                                <label class="form-label"> <b>Valor de
+                                        Equipamentos (R$)</b> </label>
+                                <input type="text" class="form-control">
+
+                                <label class="form-label"> <b>Equipamentos</b>
+                                </label>
+                                <input type="text" class="form-control"
+                                    style="height: 100px;">
+
+                                <label class="form-label"> <b>Valor Total
+                                        (R$)</b> </label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label"> <b>Contato</b>
+                                </label>
+                                <input type="text" class="form-control">
+
+                                <label class="form-label"> <b>E-mail</b>
+                                </label>
+                                <input type="text" class="form-control">
+
+                                <label class="form-label"> <b>Telefone/Celular</b>
+                                </label>
+                                <input type="text" class="form-control">
+
+                                <div class="row col-md-12 w-100">
+                                    <div class="col-md-4">
+                                        <label class="form-label"> <b>Anexos</b>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6"> </div>
+                                    <div class="col-md-2 justify-content-end">
+                                        <button class="btn btnattach" onclick="sweetUpload();"> <i class="material-icons">attachment</i> </button>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label>Nome</label>
-                                    <input type="text" class="form-control"
-                                        required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Estoque</label>
-                                    <input type="integer" class="form-control"
-                                        required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Tipo</label>
-                                    <input type="text" class="form-control"
-                                        required>
+
+                                <div style="background-color: lightgrey; width: 100%;">
+                                    <div class="row col-md-12 attachments">
+                                        <div class="col-md-1" >
+                                            <i class="fa fa-file-pdf-o"></i>
+                                        </div>
+                                        <div class="col-md-9">
+                                            Proposta Comercial 2023.pdf
+                                        </div>
+                                        <div class="col-md-1">
+                                            <i class="material-icons">file_download</i>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <i style="font-size:24px" class="fa">&#xf014;</i>
+                                        </div>
+                                        <hr class="hrattach">
+                                    </div>
+                                    
+                                    <div style="background-color: lightgrey; width: 100%;">
+                                        <div class="row col-md-12 attachments">
+                                            <div class="col-md-1" >
+                                                <i class="fa fa-file-pdf-o"></i>
+                                            </div>
+                                            <div class="col-md-9">
+                                                Proposta Comercial 2023.pdf
+                                            </div>
+                                            <div class="col-md-1">
+                                                <i class="material-icons">file_download</i>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <i style="font-size:24px" class="fa">&#xf014;</i>
+                                            </div>
+                                            <hr class="hrattach">
+                                        </div>
+
+                                        <div style="background-color: lightgrey; width: 100%;">
+                                            <div class="row col-md-12 attachments">
+                                                <div class="col-md-1" >
+                                                    <i class="fa fa-file-pdf-o"></i>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    Proposta Comercial 2023.pdf
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <i class="material-icons">file_download</i>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <i style="font-size:24px" class="fa">&#xf014;</i>
+                                                </div>
+                                                <hr class="hrattach">
+                                            </div>
+                                        </div>
+
+                                        <div style="background-color: lightgrey; width: 100%;">
+                                            <div class="row col-md-12 attachments">
+                                                <div class="col-md-1" >
+                                                    <i class="fa fa-file-pdf-o"></i>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    Proposta Comercial 2023.pdf
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <i class="material-icons">file_download</i>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <i style="font-size:24px" class="fa">&#xf014;</i>
+                                                </div>
+                                                <hr class="hrattach">
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <input type="button" class="btn btn-default"
-                                    data-bs-dismiss="modal" value="Cancelar">
-                                <input type="submit" class="btn btn-success"
-                                    value="Add">
+                    </div>
+                        <div class="row " style="padding-top: 1.5%;">
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-primary"
+                                    onclick="sweetSuccess();" style="width: 49%; margin-right: 1%;">Salvar</button>
+                                <button class="btn btn-secondary"
+                                        style="width: 49%;" onclick="sweetCancel();">Cancelar</button>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Edit Modal HTML -->
-            <div id="editEmployeeModal" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header">
-                                <h4 class="modal-title">Editar Produto</h4>
-                                <button type="button" class="close"
-                                    data-dismiss="modal" aria-hidden="true">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <label>Cod. Produto</label>
-                                    <input type="text" class="form-control"
-                                        required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Nome</label>
-                                    <input type="text" class="form-control"
-                                        required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Estoque</label>
-                                    <input type="integer" class="form-control"
-                                        required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Tipo</label>
-                                    <input type="text" class="form-control"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <input type="button" class="btn btn-default"
-                                    data-bs-dismiss="modal" value="Cancelar">
-                                <input type="submit" class="btn btn-info"
-                                    value="Save">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+        </div>
+            
+
             <!-- Delete Modal HTML -->
-            <div id="deleteEmployeeModal" class="modal fade">
+            <!--div id="deleteEmployeeModal" class="modal fade">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <form>
@@ -361,7 +442,7 @@
                         </form>
                     </div>
                 </div>
-            </div>
+            </div-->
         </div>
     </body>
 </html>
