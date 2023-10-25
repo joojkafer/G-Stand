@@ -33,7 +33,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="/ProjetoMensal/js/stands.js"></script>
+        <script src="/G-Stand/js/stands.js"></script>
+        <script src="/G-Stand/js/index.js"></script>
     </head>
     <body>
         <nav class="navbar fixed-top"
@@ -155,11 +156,11 @@
                                 <td>Permuta</td>
                                 <td>Especial</td>
                                 <td>
-                                    <a href="#editEmployeeModal" class="edit"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#addEmployeeModal">
+                                    <a href="#editEmployeeModal" 
+                                        class="edit" data-bs-toggle="modal"
+                                        data-bs-target="#editEmployeeModal">
                                         <i class="material-icons"
-                                            data-toggle="tooltip" title="Edit">&#xE254;</i>
+                                            data-toggle="tooltip" title="Editar">&#xE254;</i>
                                     </a>
                                     <a href="#deleteEmployeeModal"
                                         class="delete" data-bs-toggle="modal"
@@ -175,11 +176,11 @@
                                 <td>R$ 30.000,00</td>
                                 <td>Especial</td>
                                 <td>
-                                    <a href="#editEmployeeModal" class="edit"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#addEmployeeModal">
+                                    <a href="#editEmployeeModal" 
+                                        class="edit" data-bs-toggle="modal"
+                                        data-bs-target="#editEmployeeModal">
                                         <i class="material-icons"
-                                            data-toggle="tooltip" title="Edit">&#xE254;</i>
+                                            data-toggle="tooltip" title="Editar">&#xE254;</i>
                                     </a>
                                     <a href="#deleteEmployeeModal"
                                         class="delete" data-bs-toggle="modal"
@@ -195,11 +196,11 @@
                                 <td>R$ 9.000,00</td>
                                 <td>Básica</td>
                                 <td>
-                                    <a href="#editEmployeeModal" class="edit"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#addEmployeeModal">
+                                    <a href="#editEmployeeModal" 
+                                        class="edit" data-bs-toggle="modal"
+                                        data-bs-target="#editEmployeeModal">
                                         <i class="material-icons"
-                                            data-toggle="tooltip" title="Edit">&#xE254;</i>
+                                            data-toggle="tooltip" title="Editar">&#xE254;</i>
                                     </a>
                                     <a href="#deleteEmployeeModal"
                                         class="delete" data-bs-toggle="modal"
@@ -215,11 +216,11 @@
                                 <td>R$ 60.000,00</td>
                                 <td>Especial</td>
                                 <td>
-                                    <a href="#editEmployeeModal" class="edit"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#addEmployeeModal">
+                                    <a href="#editEmployeeModal" 
+                                        class="edit" data-bs-toggle="modal"
+                                        data-bs-target="#editEmployeeModal">
                                         <i class="material-icons"
-                                            data-toggle="tooltip" title="Edit">&#xE254;</i>
+                                            data-toggle="tooltip" title="Editar">&#xE254;</i>
                                     </a>
                                     <a href="#deleteEmployeeModal"
                                         class="delete" data-bs-toggle="modal"
@@ -248,8 +249,7 @@
                 </div>
             </div>
 
-            <div class="modal fade" id="editEmployeeModal" tabindex="-1" aria-hidden="true"
-                style="top: 11%;">
+            <div class="modal fade" id="editEmployeeModal" tabindex="-1" aria-hidden="true" style="top: 11%;">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -415,34 +415,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-            
-
-            <!-- Delete Modal HTML -->
-            <!--div id="deleteEmployeeModal" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header">
-                                <h4 class="modal-title">Deletar produto</h4>
-                                <button type="button" class="close"
-                                    data-dismiss="modal" aria-hidden="true">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Tem certeza que deseja deletar isso?</p>
-                                <p class="text-warning"><small>Essa ação não
-                                        pode ser desfeita.</small></p>
-                            </div>
-                            <div class="modal-footer">
-                                <input type="button" class="btn btn-default"
-                                    data-bs-dismiss="modal" value="Cancelar">
-                                <input type="submit" class="btn btn-danger"
-                                    value="Delete">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div-->
         </div>
     </body>
 </html>
