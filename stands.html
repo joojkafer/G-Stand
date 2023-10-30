@@ -29,10 +29,14 @@
     </script>
         <script
             src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js "></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="/G-Stand/js/stands.js"></script>
         <script src="/G-Stand/js/index.js"></script>
     </head>
@@ -136,15 +140,15 @@
                                 <td>R$ 50.000,00</td>
                                 <td>Especial</td>
                                 <td>
-                                    <a href="#editEmployeeModal" 
+                                    <a href="#editEmployeeModal"
                                         class="edit" data-bs-toggle="modal"
                                         data-bs-target="#editEmployeeModal">
                                         <i class="material-icons"
                                             data-toggle="tooltip" title="Editar">&#xE254;</i>
                                     </a>
-                                    <a href="#deleteEmployeeModal"
+                                    <a href="#clearEmployeeModal"
                                         class="delete" data-bs-toggle="modal"
-                                        data-bs-target="#deleteEmployeeModal">
+                                        data-bs-target="#clearEmployeeModal">
                                         <i class="material-icons"
                                             data-toggle="tooltip" title="Limpar">&#xE872;</i>
                                     </a>
@@ -156,15 +160,15 @@
                                 <td>Permuta</td>
                                 <td>Especial</td>
                                 <td>
-                                    <a href="#editEmployeeModal" 
+                                    <a href="#editEmployeeModal"
                                         class="edit" data-bs-toggle="modal"
                                         data-bs-target="#editEmployeeModal">
                                         <i class="material-icons"
                                             data-toggle="tooltip" title="Editar">&#xE254;</i>
                                     </a>
-                                    <a href="#deleteEmployeeModal"
+                                    <a href="#clearEmployeeModal"
                                         class="delete" data-bs-toggle="modal"
-                                        data-bs-target="#deleteEmployeeModal">
+                                        data-bs-target="#clearEmployeeModal">
                                         <i class="material-icons"
                                             data-toggle="tooltip" title="Delete">&#xE872;</i>
                                     </a>
@@ -176,15 +180,15 @@
                                 <td>R$ 30.000,00</td>
                                 <td>Especial</td>
                                 <td>
-                                    <a href="#editEmployeeModal" 
+                                    <a href="#editEmployeeModal"
                                         class="edit" data-bs-toggle="modal"
                                         data-bs-target="#editEmployeeModal">
                                         <i class="material-icons"
                                             data-toggle="tooltip" title="Editar">&#xE254;</i>
                                     </a>
-                                    <a href="#deleteEmployeeModal"
+                                    <a href="#clearloyeeModal"
                                         class="delete" data-bs-toggle="modal"
-                                        data-bs-target="#deleteEmployeeModal">
+                                        data-bs-target="#clearEmployeeModal">
                                         <i class="material-icons"
                                             data-toggle="tooltip" title="Delete">&#xE872;</i>
                                     </a>
@@ -196,15 +200,15 @@
                                 <td>R$ 9.000,00</td>
                                 <td>Básica</td>
                                 <td>
-                                    <a href="#editEmployeeModal" 
+                                    <a href="#editEmployeeModal"
                                         class="edit" data-bs-toggle="modal"
                                         data-bs-target="#editEmployeeModal">
                                         <i class="material-icons"
                                             data-toggle="tooltip" title="Editar">&#xE254;</i>
                                     </a>
-                                    <a href="#deleteEmployeeModal"
+                                    <a href="#clearEmployeeModal"
                                         class="delete" data-bs-toggle="modal"
-                                        data-bs-target="#deleteEmployeeModal">
+                                        data-bs-target="#clearEmployeeModal">
                                         <i class="material-icons"
                                             data-toggle="tooltip" title="Delete">&#xE872;</i>
                                     </a>
@@ -216,17 +220,16 @@
                                 <td>R$ 60.000,00</td>
                                 <td>Especial</td>
                                 <td>
-                                    <a href="#editEmployeeModal" 
+                                    <a href="#editEmployeeModal"
                                         class="edit" data-bs-toggle="modal"
                                         data-bs-target="#editEmployeeModal">
                                         <i class="material-icons"
                                             data-toggle="tooltip" title="Editar">&#xE254;</i>
                                     </a>
-                                    <a href="#deleteEmployeeModal"
-                                        class="delete" data-bs-toggle="modal"
-                                        data-bs-target="#deleteEmployeeModal">
+                                    <a href="#clearEmployeeModal" class="delete" 
+                                        data-bs-toggle="modal" data-bs-target="#clearEmployeeModal">
                                         <i class="material-icons"
-                                            data-toggle="tooltip" title="Delete">&#xE872;</i>
+                                            data-toggle="tooltip" title="Limpar">&#xE872;</i>
                                     </a>
                                 </td>
                             </tr>
@@ -236,11 +239,10 @@
                         <div class="hint-text">Mostrando <b>5</b> de <b>25</b>
                             entradas</div>
                         <ul class="pagination">
-                            <li class="page-item disabled"><a href="#">Voltar</a></li>
-                            <li class="page-item"><a href="#" class="page-link">1</a></li>
+                            <li class="page-item"><a href="#">Voltar</a></li>
+                            <li class="page-item active"><a href="#" class="page-link">1</a></li>
                             <li class="page-item"><a href="#" class="page-link">2</a></li>
-                            <li class="page-item active"><a href="#"
-                                    class="page-link">3</a></li>
+                            <li class="page-item"><a href="#" class="page-link">3</a></li>
                             <li class="page-item"><a href="#" class="page-link">4</a></li>
                             <li class="page-item"><a href="#" class="page-link">5</a></li>
                             <li class="page-item"><a href="#" class="page-link">Proximo</a></li>
@@ -249,109 +251,98 @@
                 </div>
             </div>
 
-            <div class="modal fade" id="editEmployeeModal" tabindex="-1" aria-hidden="true" style="top: 11%;">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">
-                            <b>Formulário do Stand</b> </h1>
-                        <button type="button" class="btn-close"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row col-md-12 justify-content-center">
-                            <div class="col-md-4">
-                                <label class="form-label"> <b>N. do Stand</b>
-                                </label>
-                                <input type="text" class="form-control">
+            <div class="modal fade" id="editEmployeeModal" tabindex="-1"
+                aria-hidden="true" style="top: 8%;">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                <b>Formulário do Stand</b> </h1>
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row col-md-12 justify-content-center">
+                                <div class="col-md-4">
+                                    <label class="form-label"> <b>N. do Stand</b>
+                                    </label>
+                                    <input type="text" class="form-control">
 
-                                <label class="form-label"> <b>Expositor</b>
-                                </label>
-                                <input type="text" class="form-control">
+                                    <label class="form-label"> <b>Expositor</b>
+                                    </label>
+                                    <input type="text" class="form-control">
 
-                                <label class="form-label"><b>Montagem</b>
-                                </label>
-                                <select class="form-select">
-                                    <option selected>Selecionar montagem</option>
-                                    <option value="1">Montagem básica</option>
-                                    <option value="2">Montagem especial</option>
-                                </select>
+                                    <label class="form-label"><b>Montagem</b>
+                                    </label>
+                                    <select class="form-select">
+                                        <option selected>Selecionar montagem</option>
+                                        <option value="1">Montagem básica</option>
+                                        <option value="2">Montagem especial</option>
+                                    </select>
 
-                                <label class="form-label"> <b>Metragem</b>
-                                </label>
-                                <input type="text" class="form-control">
+                                    <label class="form-label"> <b>Metragem</b>
+                                    </label>
+                                    <input type="text" class="form-control">
 
-                                <label class="form-label"> <b>Observação</b>
-                                </label>
-                                <input type="text" class="form-control"
-                                    style="height: 100px;">
-                            </div>
-                            <div class="col-md-4">
-                                <label class="form-label"> <b>Valor do Piso
-                                        (R$)</b> </label>
-                                <input type="text" class="form-control">
-
-                                <label class="form-label"> <b>Valor de
-                                        Montagem (R$)</b> </label>
-                                <input type="text" class="form-control">
-
-                                <label class="form-label"> <b>Valor de
-                                        Equipamentos (R$)</b> </label>
-                                <input type="text" class="form-control">
-
-                                <label class="form-label"> <b>Equipamentos</b>
-                                </label>
-                                <input type="text" class="form-control"
-                                    style="height: 100px;">
-
-                                <label class="form-label"> <b>Valor Total
-                                        (R$)</b> </label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="col-md-4">
-                                <label class="form-label"> <b>Contato</b>
-                                </label>
-                                <input type="text" class="form-control">
-
-                                <label class="form-label"> <b>E-mail</b>
-                                </label>
-                                <input type="text" class="form-control">
-
-                                <label class="form-label"> <b>Telefone/Celular</b>
-                                </label>
-                                <input type="text" class="form-control">
-
-                                <div class="row col-md-12 w-100">
-                                    <div class="col-md-4">
-                                        <label class="form-label"> <b>Anexos</b>
-                                        </label>
-                                    </div>
-                                    <div class="col-md-6"> </div>
-                                    <div class="col-md-2 justify-content-end">
-                                        <button class="btn btnattach" onclick="sweetUpload();"> <i class="material-icons">attachment</i> </button>
-                                    </div>
+                                    <label class="form-label"> <b>Observação</b>
+                                    </label>
+                                    <input type="text" class="form-control"
+                                        style="height: 100px;">
                                 </div>
+                                <div class="col-md-4">
+                                    <label class="form-label"> <b>Valor do Piso
+                                            (R$)</b> </label>
+                                    <input type="text" class="form-control">
 
-                                <div style="background-color: lightgrey; width: 100%;">
-                                    <div class="row col-md-12 attachments">
-                                        <div class="col-md-1" >
-                                            <i class="fa fa-file-pdf-o"></i>
+                                    <label class="form-label"> <b>Valor de
+                                            Montagem (R$)</b> </label>
+                                    <input type="text" class="form-control">
+
+                                    <label class="form-label"> <b>Valor de
+                                            Equipamentos (R$)</b> </label>
+                                    <input type="text" class="form-control">
+
+                                    <label class="form-label"> <b>Equipamentos</b>
+                                    </label>
+                                    <input type="text" class="form-control"
+                                        style="height: 100px;">
+
+                                    <label class="form-label"> <b>Valor Total
+                                            (R$)</b> </label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label"> <b>Contato</b>
+                                    </label>
+                                    <input type="text" class="form-control">
+
+                                    <label class="form-label"> <b>E-mail</b>
+                                    </label>
+                                    <input type="text" class="form-control">
+
+                                    <label class="form-label"> <b>Telefone/Celular</b>
+                                    </label>
+                                    <input type="text" class="form-control">
+
+                                    <div class="row col-md-12 w-100">
+                                        <div class="col-md-4">
+                                            <label class="form-label"> <b>Anexos</b>
+                                            </label>
                                         </div>
-                                        <div class="col-md-9">
-                                            Proposta Comercial 2023.pdf
+                                        <div class="col-md-6"> </div>
+                                        <div
+                                            class="col-md-2 justify-content-end">
+                                            <button class="btn btnattach"
+                                                onclick="sweetUpload();"> <i
+                                                    class="material-icons">attachment</i>
+                                            </button>
                                         </div>
-                                        <div class="col-md-1">
-                                            <i class="material-icons">file_download</i>
-                                        </div>
-                                        <div class="col-md-1">
-                                            <i style="font-size:24px" class="fa">&#xf014;</i>
-                                        </div>
-                                        <hr class="hrattach">
                                     </div>
-                                    
-                                    <div style="background-color: lightgrey; width: 100%;">
+
+                                    <div
+                                        style="background-color: lightgrey; width: 100%;">
                                         <div class="row col-md-12 attachments">
-                                            <div class="col-md-1" >
+                                            <div class="col-md-1">
                                                 <i class="fa fa-file-pdf-o"></i>
                                             </div>
                                             <div class="col-md-9">
@@ -361,14 +352,17 @@
                                                 <i class="material-icons">file_download</i>
                                             </div>
                                             <div class="col-md-1">
-                                                <i style="font-size:24px" class="fa">&#xf014;</i>
+                                                <i style="font-size:24px"
+                                                    class="fa">&#xf014;</i>
                                             </div>
                                             <hr class="hrattach">
                                         </div>
 
-                                        <div style="background-color: lightgrey; width: 100%;">
-                                            <div class="row col-md-12 attachments">
-                                                <div class="col-md-1" >
+                                        <div
+                                            style="background-color: lightgrey; width: 100%;">
+                                            <div
+                                                class="row col-md-12 attachments">
+                                                <div class="col-md-1">
                                                     <i class="fa fa-file-pdf-o"></i>
                                                 </div>
                                                 <div class="col-md-9">
@@ -378,43 +372,140 @@
                                                     <i class="material-icons">file_download</i>
                                                 </div>
                                                 <div class="col-md-1">
-                                                    <i style="font-size:24px" class="fa">&#xf014;</i>
+                                                    <i style="font-size:24px"
+                                                        class="fa">&#xf014;</i>
                                                 </div>
                                                 <hr class="hrattach">
                                             </div>
-                                        </div>
 
-                                        <div style="background-color: lightgrey; width: 100%;">
-                                            <div class="row col-md-12 attachments">
-                                                <div class="col-md-1" >
-                                                    <i class="fa fa-file-pdf-o"></i>
+                                            <div
+                                                style="background-color: lightgrey; width: 100%;">
+                                                <div
+                                                    class="row col-md-12 attachments">
+                                                    <div class="col-md-1">
+                                                        <i
+                                                            class="fa fa-file-pdf-o"></i>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        Proposta Comercial
+                                                        2023.pdf
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <i
+                                                            class="material-icons">file_download</i>
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <i
+                                                            style="font-size:24px"
+                                                            class="fa">&#xf014;</i>
+                                                    </div>
+                                                    <hr class="hrattach">
                                                 </div>
-                                                <div class="col-md-9">
-                                                    Proposta Comercial 2023.pdf
+                                            </div>
+
+                                            <div
+                                                style="background-color: lightgrey; width: 100%;">
+                                                <div
+                                                    class="row col-md-12 attachments">
+                                                    <div class="col-md-1">
+                                                        <i
+                                                            class="fa fa-file-pdf-o"></i>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        Proposta Comercial
+                                                        2023.pdf
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <i
+                                                            class="material-icons">file_download</i>
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <i
+                                                            style="font-size:24px"
+                                                            class="fa">&#xf014;</i>
+                                                    </div>
+                                                    <hr class="hrattach">
                                                 </div>
-                                                <div class="col-md-1">
-                                                    <i class="material-icons">file_download</i>
-                                                </div>
-                                                <div class="col-md-1">
-                                                    <i style="font-size:24px" class="fa">&#xf014;</i>
-                                                </div>
-                                                <hr class="hrattach">
                                             </div>
                                         </div>
+                                    </div>
                                 </div>
-                            </div>
-                    </div>
-                        <div class="row " style="padding-top: 1.5%;">
-                            <div class="d-flex justify-content-center">
-                                <button class="btn btn-primary"
-                                    onclick="sweetSuccess();" style="width: 49%; margin-right: 1%;">Salvar</button>
-                                <button class="btn btn-secondary"
-                                        style="width: 49%;" onclick="sweetCancel();">Cancelar</button>
+                                <div class="row " style="padding-top: 1.5%;">
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-primary"
+                                            onclick="sweetSuccess();"
+                                            style="width: 49%; margin-right: 1%;">Salvar</button>
+                                        <button class="btn btn-secondary"
+                                            style="width: 49%;"
+                                            onclick="sweetCancel();">Cancelar</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </body>
-</html>
+
+            <div id="addEmployeeModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Adicionar produto</h4>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>Nº do Stand</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Expositor</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Metragem</label>
+                                    <input type="integer" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Montagem</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="button" class="btn btn-default" data-bs-dismiss="modal" value="Cancelar">
+                                <input type="submit" onclick="addStandSuccess();" data-bs-dismiss="modal" class="btn btn-primary" value="Adicionar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="clearEmployeeModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h4 class="modal-title">Limpar/Deletar Stand</h4>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Oque deseja fazer?</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">Limpar dados do stand</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">Excluir stand</label>
+                                  </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="button" class="btn btn-default" data-bs-dismiss="modal" value="Cancelar">
+                                <input type="button" onclick="clearStandSuccess();" data-bs-dismiss="modal" class="btn btn-danger" value="Executar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </body>
+        </html>
