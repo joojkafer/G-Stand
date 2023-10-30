@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/ProjetoMensal/servicos/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/historico/js/index.js"></script>
+    <title>G-Stand - Historico</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+    <link
+        href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="/historico/css/index.css">
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+</script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js "></script>
+    <script
+        src="../js/index.js"></script>
+</head>
+
+<body>
+    <nav class="navbar fixed-top"
+                style="padding: 1.2%; background-color: rgb(56, 172, 245);">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../G-Stand/index.html">
+                        <img src="../img/logo.png" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1"
+                        id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <img src="../img/logo.png" class="logo">
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul
+                                class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="hrefpadrao" href="../relatorios.html">Gerar relatório</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="hrefpadrao" href="">Stands</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#"
+                                        role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Acessar
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item"
+                                                href="../G-Stand/logs/login.html">Entrar</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item"
+                                                href="../G-Stand/logs/register.html">Criar
+                                                Conta</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item"
+                                                href="../G-Stand/logs/login.html">Trocar
+                                                Usuário</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item"
+                                                href="../G-Stand/logs/login.html">Sair</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+    
+    <div class="row" style="padding-top:10%">
+        <div class="container" style="width: 90%;">
+            <div class="table-wrapper">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-6 d-flex">
+                            <h2> <b>Historico</b></h2>
+                        </div>
+                        <div class="col-sm-6">
+                           
+                            <a href="#cleanModal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cleanModal">
+                                <i  class="material-icons cleaning_services">&#xf0ff;</i> <span>Limpar historico</span>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Usuário</th>
+                            <th>Data e Hora</th>
+                            <th>Ação</th>
+                            <th>Stand</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Adriano</td>
+                            <td>21/09/2023 12:20:23</td>
+                            <td>Modificou preço do Stand 200 para 200</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>Luis</td>
+                            <td>20/09/2023 12:20:23</td>
+                            <td>Apagou o Stand 201</td>
+                            <td>201</td>
+                        </tr>
+                        <tr>
+                            <td>Joao</td>
+                            <td>22/09/2023 12:20:23</td>
+                            <td>Criou um novo Stand 202</td>
+                            <td>202</td>
+                        </tr>
+                        <tr>
+                            <td>Kafer</td>
+                            <td>11/09/2023 12:20:23</td>
+                            <td>Modificou preço do Stand 203 para 250</td>
+                            <td>203</td>
+                        </tr>
+                        <tr>
+                            <td>Ribeiro</td>
+                            <td>11/10/2023 12:30:23</td>
+                            <td>Modificou preço do Stand 204 para 180</td>
+                            <td>204</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="clearfix">
+                    <div class="hint-text">Mostrando <b>5</b> de <b>25</b> entradas</div>
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a href="#">Voltar</a></li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item"><a href="#" class="page-link">5</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Proximo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Edit Modal HTML -->
+        <div id="editEmployeeModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h4 class="modal-title">Editar quarto #</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label>Num. quarto</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Ultima Limpeza</label>
+                                <input type="datetime-local" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Hospedado?</label>
+                                <select class="form-control" required>
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Tipo</label>
+                                <select class="form-control" required>
+                                    <option value="single">Single</option>
+                                    <option value="double">Double</option>
+                                    <option value="triple">Triple</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <input type="button" class="btn btn-default" data-bs-dismiss="modal" value="Cancelar">
+                            <input type="submit" class="btn btn-success" value="Add">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Edit Modal HTML -->
+        <div id="editEmployeeModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h4 class="modal-title">Adicionar quartos</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label>Num. quarto</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Ultima Limpeza</label>
+                                <input type="datetime-local" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Hospedado?</label>
+                                <select class="form-control" required>
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Tipo</label>
+                                <select class="form-control" required>
+                                    <option value="single">Single</option>
+                                    <option value="double">Double</option>
+                                    <option value="triple">Triple</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <input type="button" class="btn btn-default" data-bs-dismiss="modal" value="Cancelar">
+                            <input type="submit" class="btn btn-success" value="Add">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Delete Modal HTML -->
+        <div id="deleteEmployeeModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h4 class="modal-title">Deletar quarto</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Tem certeza que deseja deletar isso?</p>
+                            <p class="text-warning"><small>Essa ação não pode ser desfeita.</small></p>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="button" class="btn btn-default" data-bs-dismiss="modal" value="Cancelar">
+                            <input type="submit" class="btn btn-danger" value="Delete">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Clean Modal HTML -->
+        <div id="cleanModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h4 class="modal-title">Limpar quarto?</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-warning"><small>A data de limpeza do quarto será marcada com o horário atual.</small></p>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="button" class="btn btn-default" data-bs-dismiss="modal" value="Cancelar">
+                            <input type="submit" class="btn btn-success" value="Limpar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script>
+    includeHTML();
+</script>
+
+</html>
